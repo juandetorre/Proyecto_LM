@@ -86,18 +86,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li class="active">
 									<a href="index.html">Inicio</a>
 								</li>
-								<li>
-									<a href="about.html">Sobre nosotros</a>
-								</li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Recursos
 									</a>
 									<ul class="dropdown-menu">
 										<li>
-											<a href="Seccion2A.html">Administración</a>
+											<a href="Administracion.html">Administración</a>
 										</li>
 										<li>
-											<a href="Seccion2B.html">Visualización de datos</a>
+											<a href="Visualizacion.html">Visualización de datos</a>
 										</li>
 									</ul>
 								</li>
@@ -115,112 +112,75 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- banner -->
 	<div class="banner">
-		<h2>Bloqueo de accesos</h2>
+		<h2>Incorporar equipos al dominio</h2>
 		<p>
 			<a href="index.html">Volver al inicio »</a> ¡Empezemos! </p>
 	</div>
 	<!--//banner -->
 
 	<!-- Informacion -->
+
 	<article class="seccion2">
 		<header>
-			<h1>Bloquear de acceso al dominio</h1>
-		</header>
+			<h1>Incorporar equipos al Dominio</h1>
+		</header>&nbsp;
 
-		<p>La seguridad y privacidad de los datos es un factor clave en las empresas, dado que su valor hace que ciertos sujetos deseen
-			hacerse con ellos para diversos fines como su venta, distribución a terceros, eliminar competencias, etc. Por ello es
-			necesario blindar de una manera segura y eficiente el sistema y sus recursos de posibles brechas y accesos no deseados,
-			concebidos o establecidos.
-		</p>
-
-		<p>Las medidas principales que es necesario planear y llevar a cabo para dicho fin son:</p>
-
-		<ul>
-			<li>
-				<b>No agregar equipos al dominio:</b> Esta medida impide en teoría por comppleto el inicio de sesión dado que el equipo
-				no estaría agregado en el Dominio.</li>
-			<li>
-				<b>Establecer horarios de conexión:</b> Con ello limitamos el acceso de los grupos y usuarios al dominio, obteniendo mayor
-				control en función de las necesidades del sistema o usuario y su trabajo.</li>
-			<li>
-				<b>Establecer fecha de expiración:</b> En el caso de que el grupo, equipo o usuario vaya a realizar un trabajo temporal,
-				con una fecha de vencimiento, podemos limitar su acceso hasta dicha finalización.</li>
-
-			<li>
-				<b>Implementar modelos administrativos de privilegios mínimos:</b> Una opción poco usada y eficaz es intentar que todas
-				las cuentas tengas solo los permisos necesarios e indespensables para su funcionamiento, sin añadidos necesarios, y siempre
-				evitando el control total de un administrador sobre un valor o conjunto de caraterísticas, grupos o programas.</li>
-
-			<li>
-				<b>Proteger los controladores de dominio contra ataques:</b> Es necesario tanto una protección física como lógica. Por ello
-				es necesario el uso de bastidores correctos, uso de ubicaciones físicas independientes, configuración de Firewall, uso
-				de BitLocker, trasbase de control a medios externos, restricciones de RDP, evitar la exploración web, etc.</li>
-		</ul>
-
-		<h2 class="seccion2H2">
-			<b>Modificar horarios de conexión</b>
-		</h2>
-		<p>Si deseamos establecer unos límites en los horarios de conexión para los usuarios, será tan simple como buscarlo en su
-			lugar correspondoente, y modificar sus propiedades.</p>
-
-		<p>Selccionaremos la pestaña de
-			<b>cuenta</b> y haremos click sobre
-			<b>
-				<i>Horas de inicio de sesión</i>
-			</b>. El color azul indica las horas de sesión permitidas, mientras que los cuadros blancos aquellas en las que el usuario
-			no tendrá dicha posibilidad.</p>
-
-		<img src="images/2B_1.PNG" alt="Modificar horas de conexion" />
-
-		<h2 class="seccion2H2">
-			<b>Establecer fecha de expiración</b>
-		</h2>
-
-		<p>El proceso es casi idéntico al anterior. Una vez encontrado el usuario sobre el cual aplicar la restricción, modificaremos
-			sus propiedades. Seleccionaremos la pestaña de
-			<b>cuenta</b> y en la parte de abajo deberemos de introducir la fecha deseada.
-		</p>
-
-		<img src="images/2B_2.PNG" alt="Fecha de expiracion" />
-
-		<h2 class="seccion2H2">
-			<b>Evitar la exploración Web</b>
-		</h2>
-
-		<p>Se puede usar una combinación de configuración de AppLocker, la configuración de proxy "agujero negro" y la configuración
-			de WFAS para impedir que los controladores de dominio tenga acceso a Internet e impedir el uso de los exploradores web
-			en los controladores de dominio. Con ello se reduce la posibilidad de infección debido al uso de Internet y sus medios,
-			que no son escasos.</p>
-
-		<h2 class="seccion2H2">
-			<b>Restricciones de RDP</b>
-		</h2>
-
-		<p>Los objetos de directiva de grupo vinculados a todas las unidades organizativas en un bosque de controladores de dominio
-			deben estar configurados para permitir las conexiones RDP. Esto puede lograrse mediante una combinación de opciones de
-			derechos de usuario y la configuración de WFAS y debe implementarse en los GPO para que la directiva se aplique de forma
-			coherente.
+		<p>Para comenzar a utilizar los recursos que ofrece un dominio, es necesario añadir a dicho dominio los ordenadores que puedan
+			actuar como clientes.
+			<br/> El proceso se realiza con tres pasos básicos: Establecer las características de red, para que coincidan con las necesidades
+			del dominio, ajustar el nombre del equipo y unirlo al dominio.
 		</p>
 
 		<h2 class="seccion2H2">
-			<b>AppLocker</b>
+			<b>Configurar la red en el equipo cliente</b>
 		</h2>
 
-		<p>Debe usarse para configurar los servicios y aplicaciones que tienen permiso para ejecutarse en controladores de dominio.
-			Se agrega una capa de seguridad adicional para que incluso si una aplicación no autorizada está instalada en un controlador
-			de dominio, no se puede ejecutar.
+		<p>En este paso, podemos dejar habilitada la asignación automática de IP, pero debemos asegurarnos de que el Servidor DNS
+			preferido hace referencia a la dirección IP del controlador del dominio.</p>
+
+		<img src="images/2A_1.PNG" alt="StepOne" />
+
+		<p>Para comprobar que el proceso, aunque sencillo, se ha realizado correctamente, deberemos de hacer un ping al servidor.</p>
+		<p>Si utilizamos el nombre del servidor en lugar de su dirección IP, comprobaremos que el equipo se encuentra en la red del
+			servidor, que la configuración DNS del cliente es correcta y que el servidor DNS del controlador de dominio está funcionando
+			adecuadamente.
 		</p>
+
+		<img src="images/2A_2.PNG" alt="StepTwo" />
+
+		<h2 class="seccion2H2">
+			<b>Cambiar el nombre del equipo y unirlo al dominio</b>
+		</h2>
+
+		<p>Es necesario ajustar el nombre del equipo cliente, para que coincida con un nombre de equipo definido en el dominio. Al
+			indicar el nombre del dominio, el sistema procederá a establecer el vínculo.</p>
+
+		<p>Para ello haremos click derecho sobre el botón de inicio y seleccionaremos la opción de
+			<i>sistema</i>. A continuación, en la ventana emergente debemos de escoger la opción que pone
+			<i>cambiar configuración</i> y cambiar en la ventana que aparece.</p>
+
+		<p>En el campo Nombre de equipo, debemos asegurar de escribir el nombre de la cuenta del dominio. Además, en el área Miembro
+			del, elegiremos la opción Dominio y debajo escribiremos el nombre del dominio al que queremos unir el equipo.</p>
+
+		<img src="images/2A_3.PNG" alt="StepThree" />
+
+		<p>Windows 10 busca en la red el dominio especificado y si lo encuentra deberemos escribir un nombre de usuario y una contraseña,
+			perteneciente al dominio, que tenga privilegios suficientes para unir el equipo cliente.</p>
+
+			<img src="images/2A_4.PNG" alt="StepFour" />
+
+			<p>Finalmente deberemos de reiniciar el sistema tras guardar todos los datos y cerrar los programas abiertos.</p>
+
 
 
 
 
 
 	</article>
+
+
+
 	<!--//Informacion -->
-
-
-
-
 
 	<!-- footer -->
 	<div class="footer_top_agileits">
