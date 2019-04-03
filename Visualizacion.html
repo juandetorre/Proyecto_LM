@@ -24,10 +24,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<link href="css/font-awesome.css" rel="stylesheet" />
 	<!-- //for bootstrap working -->
 
-	<link href="//fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese"
-	    rel="stylesheet" />
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
-	    rel="stylesheet" />
+	<link
+		href="//fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese"
+		rel="stylesheet" />
+	<link
+		href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet" />
 
 </head>
 
@@ -59,7 +61,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a class="linkedin" href="https://es.linkedin.com/">Linkedin
 							<i class="fa fa-linkedin"></i>
 						</a>
-						<a class="login" href="https://www.netacad.com/es/" data-toggle="modal" data-target="#myModal1">Login</a>
+						<a class="login" href="https://www.netacad.com/es/" data-toggle="modal"
+							data-target="#myModal1">Login</a>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -69,7 +72,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<nav class="navbar navbar-default">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -120,97 +124,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<!-- Informacion -->
 	<article class="seccion2">
-		<header>
-			<h1>Bloquear de acceso al dominio</h1>
-		</header>
+		<table>
+			<form action="resultado_busqueda" method="get">
+				<thead>
+					<tr>
+						<td>Fecha desde</td>
+						<td><input type="date" name="fecha" /></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Fecha hasta </td>
+						<td><input type="date" name="fecha" /></td>
+					</tr>
 
-		<p>La seguridad y privacidad de los datos es un factor clave en las empresas, dado que su valor hace que ciertos sujetos deseen
-			hacerse con ellos para diversos fines como su venta, distribución a terceros, eliminar competencias, etc. Por ello es
-			necesario blindar de una manera segura y eficiente el sistema y sus recursos de posibles brechas y accesos no deseados,
-			concebidos o establecidos.
-		</p>
+					<tr>
+						<input type="reset">
+					</tr>
+					
 
-		<p>Las medidas principales que es necesario planear y llevar a cabo para dicho fin son:</p>
+					<select name="Medida">
 
-		<ul>
-			<li>
-				<b>No agregar equipos al dominio:</b> Esta medida impide en teoría por comppleto el inicio de sesión dado que el equipo
-				no estaría agregado en el Dominio.</li>
-			<li>
-				<b>Establecer horarios de conexión:</b> Con ello limitamos el acceso de los grupos y usuarios al dominio, obteniendo mayor
-				control en función de las necesidades del sistema o usuario y su trabajo.</li>
-			<li>
-				<b>Establecer fecha de expiración:</b> En el caso de que el grupo, equipo o usuario vaya a realizar un trabajo temporal,
-				con una fecha de vencimiento, podemos limitar su acceso hasta dicha finalización.</li>
+						<option>Medida 1</option>
 
-			<li>
-				<b>Implementar modelos administrativos de privilegios mínimos:</b> Una opción poco usada y eficaz es intentar que todas
-				las cuentas tengas solo los permisos necesarios e indespensables para su funcionamiento, sin añadidos necesarios, y siempre
-				evitando el control total de un administrador sobre un valor o conjunto de caraterísticas, grupos o programas.</li>
+						<option>Medida 2</option>
 
-			<li>
-				<b>Proteger los controladores de dominio contra ataques:</b> Es necesario tanto una protección física como lógica. Por ello
-				es necesario el uso de bastidores correctos, uso de ubicaciones físicas independientes, configuración de Firewall, uso
-				de BitLocker, trasbase de control a medios externos, restricciones de RDP, evitar la exploración web, etc.</li>
-		</ul>
+					</select>
 
-		<h2 class="seccion2H2">
-			<b>Modificar horarios de conexión</b>
-		</h2>
-		<p>Si deseamos establecer unos límites en los horarios de conexión para los usuarios, será tan simple como buscarlo en su
-			lugar correspondoente, y modificar sus propiedades.</p>
-
-		<p>Selccionaremos la pestaña de
-			<b>cuenta</b> y haremos click sobre
-			<b>
-				<i>Horas de inicio de sesión</i>
-			</b>. El color azul indica las horas de sesión permitidas, mientras que los cuadros blancos aquellas en las que el usuario
-			no tendrá dicha posibilidad.</p>
-
-		<img src="images/2B_1.PNG" alt="Modificar horas de conexion" />
-
-		<h2 class="seccion2H2">
-			<b>Establecer fecha de expiración</b>
-		</h2>
-
-		<p>El proceso es casi idéntico al anterior. Una vez encontrado el usuario sobre el cual aplicar la restricción, modificaremos
-			sus propiedades. Seleccionaremos la pestaña de
-			<b>cuenta</b> y en la parte de abajo deberemos de introducir la fecha deseada.
-		</p>
-
-		<img src="images/2B_2.PNG" alt="Fecha de expiracion" />
-
-		<h2 class="seccion2H2">
-			<b>Evitar la exploración Web</b>
-		</h2>
-
-		<p>Se puede usar una combinación de configuración de AppLocker, la configuración de proxy "agujero negro" y la configuración
-			de WFAS para impedir que los controladores de dominio tenga acceso a Internet e impedir el uso de los exploradores web
-			en los controladores de dominio. Con ello se reduce la posibilidad de infección debido al uso de Internet y sus medios,
-			que no son escasos.</p>
-
-		<h2 class="seccion2H2">
-			<b>Restricciones de RDP</b>
-		</h2>
-
-		<p>Los objetos de directiva de grupo vinculados a todas las unidades organizativas en un bosque de controladores de dominio
-			deben estar configurados para permitir las conexiones RDP. Esto puede lograrse mediante una combinación de opciones de
-			derechos de usuario y la configuración de WFAS y debe implementarse en los GPO para que la directiva se aplique de forma
-			coherente.
-		</p>
-
-		<h2 class="seccion2H2">
-			<b>AppLocker</b>
-		</h2>
-
-		<p>Debe usarse para configurar los servicios y aplicaciones que tienen permiso para ejecutarse en controladores de dominio.
-			Se agrega una capa de seguridad adicional para que incluso si una aplicación no autorizada está instalada en un controlador
-			de dominio, no se puede ejecutar.
-		</p>
-
-
-
-
+				</tbody>
+				<tfoot>
+					<tr>
+						<td> <input type="submit" value="Enviar" /></td>
+					</tr>
+				</tfoot>
+			</form>
+		</table>
 
 	</article>
 	<!--//Informacion -->
@@ -288,10 +236,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h3 class="agileinfo_sign">LogIn To Your Account</h3>
 						<form action="#" method="post">
 							<div class="styled-input agile-styled-input-top">
-								<input type="text" title="Nombre de usuario" placeholder="User Name" name="Name" required="" />
+								<input type="text" title="Nombre de usuario" placeholder="User Name" name="Name"
+									required="" />
 							</div>
 							<div class="styled-input">
-								<input type="password" title="Contraseña" placeholder="Password" name="password" required="" />
+								<input type="password" title="Contraseña" placeholder="Password" name="password"
+									required="" />
 							</div>
 							<input type="submit" value="Sign In" />
 						</form>
